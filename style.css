@@ -49,7 +49,7 @@ body {
 
 .name {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: clamp(var(--font-size), 1.5rem, 2rem);
 }
 
 .location {
