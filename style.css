@@ -1,0 +1,86 @@
+@import url("./fonts/static/Inter-Regular.ttf");
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-black-1: hsl(0, 0%, 8%);
+  --clr-black-2: hsl(0, 0%, 12%);
+  --clr-black-3: hsl(0, 0%, 20%);
+  --font-size: 0.875rem;
+  --border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-black-1);
+  color: var(--clr-white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-size);
+}
+
+.card {
+  background-color: var(--clr-black-2);
+  border-radius: var(--border-radius);
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+  width: 90vw;
+  max-width: 25rem;
+}
+
+.avatar-img {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.location {
+  color: var(--clr-green);
+  font-weight: 400;
+  font-size: var(--font-size);
+}
+
+.social-links {
+  list-style-type: none;
+  min-width: 90%;
+}
+
+.social-item {
+  margin-bottom: 0.75rem;
+  background-color: var(--clr-black-3); 
+  display: block;
+  padding: 1rem 5rem;
+  border-radius: var(--border-radius);
+  color: var(--clr-white);
+}
+
+.social-item a {
+  color: var(--clr-white);
+  text-decoration: none;
+  transition: all 0.3s linear;
+  font-weight: 600;
+}
+
+.social-item a:hover {
+  color: var(--clr-green);
+}
+
