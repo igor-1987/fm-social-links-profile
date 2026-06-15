@@ -72,6 +72,7 @@ body {
   padding: 1rem 5rem;
   border-radius: var(--border-radius);
   color: var(--clr-white);
+  cursor: pointer;
 }
 
 .social-item a {
@@ -81,7 +82,7 @@ body {
   font-weight: 600;
 }
 
-.social-item a:hover {
+.social-item:hover a {
   color: var(--clr-green);
 }
 
