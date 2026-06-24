@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "Inter-Regular";
+  font-family: "Inter Regular";
   src: url("./fonts/static/Inter-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Inter-Semibold";
+  font-family: "Inter Semibold";
   src: url("./fonts/static/Inter-SemiBold.ttf");
 }
 
 @font-face {
-  font-family: 'Inter-Bold';
+  font-family: 'Inter Bold';
   src: url("./fonts/static/Inter-Bold.ttf");
 }
 
@@ -23,9 +23,9 @@
   /* fonts */
   --font-family: 'Inter', sans-serif;
   --font-size: 0.875rem;
-  --text-preset-1: 1.5rem/1.5 'Inter-Bold', sans-serif;
-  --text-preset-2: 0.875rem/1.5 'Inter-Regular', sans-serif;
-  --text-preset-2bold: 0.875rem/1.5 'Inter-Bold', sans-serif;
+  --text-preset-1: 1.5rem/1.5 'Inter Bold', sans-serif;
+  --text-preset-2: 0.875rem/1.5 'Inter Regular', sans-serif;
+  --text-preset-2bold: 0.875rem/1.5 'Inter Bold', sans-serif;
   /* spacing */
   --space-500: 2.5rem;
   --space-300: 1.5rem;
