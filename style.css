@@ -62,7 +62,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-  padding: clamp(1.5rem, 2vw, 2.5rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
   width: 90vw;
   max-width: 25rem;
 }
@@ -80,8 +80,12 @@ body {
 
 .location {
   color: var(--clr-green);
-  font-weight: 400;
-  font-size: var(--font-size);
+  font: var(--text-preset-2bold);
+}
+
+.position {
+  color: var(--clr-white);
+  font: var(--text-preset-2);
 }
 
 .social-links {
@@ -105,9 +109,9 @@ body {
 
 .social-item a {
   color: var(--clr-white);
+  font: var(--text-preset-2bold);
   text-decoration: none;
   transition: var(--transition);
-  font-weight: 600;
 }
 
 .social-item:hover {
