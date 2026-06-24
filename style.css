@@ -1,13 +1,40 @@
-@import url("./fonts/static/Inter-Regular.ttf");
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Semibold";
+  src: url("./fonts/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url("./fonts/static/Inter-Bold.ttf");
+}
 
 :root {
+  /* colors */
   --clr-white: hsl(0, 0%, 100%);
   --clr-green: hsl(75, 94%, 57%);
-  --clr-black-1: hsl(0, 0%, 8%);
-  --clr-black-2: hsl(0, 0%, 12%);
-  --clr-black-3: hsl(0, 0%, 20%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-700: hsl(0, 0%, 20%);
+  /* fonts */
+  --font-family: 'Inter', sans-serif;
   --font-size: 0.875rem;
+  --text-preset-1: 1.5rem/1.5 'Inter-Bold', sans-serif;
+  --text-preset-2: 0.875rem/1.5 'Inter-Regular', sans-serif;
+  --text-preset-2bold: 0.875rem/1.5 'Inter-Bold', sans-serif;
+  /* spacing */
+  --space-500: 2.5rem;
+  --space-300: 1.5rem;
+  --space-200: 1.25rem;
+  --space-100: 0.5rem;
+  --space-50: 0.25rem;
+  /* other units */
   --border-radius: 0.5rem;
+  --transition: all 0.3s linear;
 }
 
 * {
@@ -17,25 +44,25 @@
 }
 
 body {
-  background-color: var(--clr-black-1);
+  background-color: var(--clr-grey-900);
   color: var(--clr-white);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-family);
   font-size: var(--font-size);
 }
 
 .card {
-  background-color: var(--clr-black-2);
+  background-color: var(--clr-grey-800);
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem;
-  padding: clamp(1.5rem, 1.75rem, 2rem);
+  gap: 1.5rem;
+  padding: clamp(1.5rem, 2vw, 2.5rem);
   width: 90vw;
   max-width: 25rem;
 }
@@ -48,8 +75,7 @@ body {
 }
 
 .name {
-  font-weight: 400;
-  font-size: clamp(var(--font-size), 1.5rem, 2rem);
+  font: var(--text-preset-1);
 }
 
 .location {
@@ -63,32 +89,34 @@ body {
   min-width: 90%;
   display: flex;
   flex-direction: column;
-  row-gap: 0.75rem;
+  row-gap: 1rem;
 }
 
 .social-item {
-  background-color: var(--clr-black-3);
+  flex: 1;
+  background-color: var(--clr-grey-700);
   display: block;
   padding: 1rem 5rem;
   border-radius: var(--border-radius);
   color: var(--clr-white);
+  transition: var(--transition);
   cursor: pointer;
 }
 
 .social-item a {
   color: var(--clr-white);
   text-decoration: none;
-  transition: all 0.3s linear;
+  transition: var(--transition);
   font-weight: 600;
 }
 
 .social-item:hover {
   background-color: var(--clr-green);
-  color: var(--clr-black-1);
+  color: var(--clr-grey-900);
 }
 
 .social-item:hover a {
-  color: var(--clr-black-1);
+  color: var(--clr-grey-900);
 }
 
 @media (prefers-reduced-motion: reduce) {
