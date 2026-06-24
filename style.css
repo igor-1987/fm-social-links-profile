@@ -64,8 +64,7 @@ body {
   text-align: center;
   gap: 1.5rem;
   padding: clamp(1.5rem, 4vw, 2.5rem);
-  width: 90vw;
-  max-width: 25rem;
+  width: clamp(20.5rem, 90vw, 24rem);
 }
 
 .avatar-img {
