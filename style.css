@@ -30,6 +30,7 @@
   --space-500: 2.5rem;
   --space-300: 1.5rem;
   --space-200: 1.25rem;
+  --space-150: 0.75rem;
   --space-100: 0.5rem;
   --space-50: 0.25rem;
   /* other units */
@@ -68,10 +69,15 @@ body {
 }
 
 .avatar-img {
+  flex: 1;
   display: block;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
+}
+
+.user-info {
+  flex: 1;
 }
 
 .name {
@@ -84,13 +90,14 @@ body {
 }
 
 .position {
+  flex: 1;
   color: var(--clr-white);
   font: var(--text-preset-2);
 }
 
 .social-links {
   list-style-type: none;
-  min-width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -100,7 +107,7 @@ body {
   flex: 1;
   background-color: var(--clr-grey-700);
   display: block;
-  padding: 1rem 5rem;
+  padding: var(--space-150);
   border-radius: var(--border-radius);
   color: var(--clr-white);
   transition: var(--transition);
