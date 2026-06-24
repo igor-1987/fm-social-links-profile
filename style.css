@@ -82,6 +82,7 @@ body {
 
 .name {
   font: var(--text-preset-1);
+  margin-bottom: var(--space-50);
 }
 
 .location {
