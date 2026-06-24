@@ -34,7 +34,8 @@
   --space-100: 0.5rem;
   --space-50: 0.25rem;
   /* other units */
-  --border-radius: 0.5rem;
+  --border-radius-1: 0.75rem;
+  --border-radius-2: 0.5rem;
   --transition: all 0.3s linear;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .card {
   background-color: var(--clr-grey-800);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,8 +71,8 @@ body {
 .avatar-img {
   flex: 1;
   display: block;
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 50%;
 }
 
@@ -107,7 +108,7 @@ body {
   background-color: var(--clr-grey-700);
   display: block;
   padding: var(--space-150);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-2);
   color: var(--clr-white);
   transition: var(--transition);
   cursor: pointer;
