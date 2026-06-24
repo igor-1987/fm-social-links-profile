@@ -82,8 +82,13 @@ body {
   font-weight: 600;
 }
 
+.social-item:hover {
+  background-color: var(--clr-green);
+  color: var(--clr-black-1);
+}
+
 .social-item:hover a {
-  color: var(--clr-green);
+  color: var(--clr-black-1);
 }
 
 @media (prefers-reduced-motion: reduce) {
